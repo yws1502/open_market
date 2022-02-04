@@ -98,7 +98,7 @@ const Container = styled.footer`
   left: 0;
   right: 0;
   background-color: ${({ theme }) => theme.color.lightGray};
-  padding: 54px 0 60px;
+  padding: 60px 0;
 `;
 
 const InnerContainer = styled.div`

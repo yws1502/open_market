@@ -21,16 +21,20 @@ export const Headers: React.FC<HeadersProps> = ({ h1Title }) => {
         </div>
         <nav>
           <ul>
-            <LinkItem
-              urlPath="/order/card"
-              name="장바구니"
-              imagePath="/assets/icon-shopping-cart.svg"
-            />
-            <LinkItem
-              urlPath="/login"
-              name="로그인"
-              imagePath="/assets/icon-user.svg"
-            />
+            <li>
+              <LinkItem
+                urlPath="/order/card"
+                name="장바구니"
+                imagePath="/assets/icon-shopping-cart.svg"
+              />
+            </li>
+            <li>
+              <LinkItem
+                urlPath="/login"
+                name="로그인"
+                imagePath="/assets/icon-user.svg"
+              />
+            </li>
           </ul>
         </nav>
       </InnerContainer>
@@ -42,7 +46,7 @@ const Container = styled.header`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `;
 
-export const InnerContainer = styled.div`
+const InnerContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
