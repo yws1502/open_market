@@ -41,6 +41,7 @@ export const SearchBarContainer = styled.fieldset`
     background-color: transparent;
     border: none;
     background-image: url(/assets/icon-search.svg);
+    cursor: pointer;
     width: 28px;
     height: 28px;
     &:focus {
