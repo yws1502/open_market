@@ -92,10 +92,6 @@ export const Footer = () => {
 };
 
 const Container = styled.footer`
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: ${({ theme }) => theme.color.lightGray};
   padding: 60px 0;
 `;

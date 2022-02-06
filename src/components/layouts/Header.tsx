@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import React from "react";
-import { TitleLogo, SearchBar, LinkItem } from "./Header";
+import { TitleLogo, SearchBar, LinkItem } from "./Headers";
 
-
-interface HeadersProps {
+interface HeaderProps {
   h1Title: string;
 }
 
-export const Headers: React.FC<HeadersProps> = ({ h1Title }) => {
+export const Header: React.FC<HeaderProps> = ({ h1Title }) => {
   return (
     <Container>
       <h1 className="a11y-hidden">{h1Title}</h1>
@@ -22,20 +21,16 @@ export const Headers: React.FC<HeadersProps> = ({ h1Title }) => {
         </div>
         <nav>
           <ul>
-            <li>
-              <LinkItem
-                urlPath="/order/card"
-                name="장바구니"
-                imagePath="/assets/icon-shopping-cart.svg"
-              />
-            </li>
-            <li>
-              <LinkItem
-                urlPath="/login"
-                name="로그인"
-                imagePath="/assets/icon-user.svg"
-              />
-            </li>
+            <LinkItem
+              urlPath="/order/card"
+              name="장바구니"
+              imagePath="/assets/icon-shopping-cart.svg"
+            />
+            <LinkItem
+              urlPath="/login"
+              name="로그인"
+              imagePath="/assets/icon-user.svg"
+            />
           </ul>
         </nav>
       </InnerContainer>
