@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
-import { Meta } from "../components";
-import { ImageSlide } from "../components";
+import { Meta, ImageSlide, ProductContainer } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +10,7 @@ const Home: NextPage = () => {
       />
       <div>
         <ImageSlide />
+        <ProductContainer />
       </div>
     </div>
   );
