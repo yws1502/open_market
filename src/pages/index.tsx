@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { Meta } from "../components";
+import { ImageSlide } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +9,9 @@ const Home: NextPage = () => {
         title="open market | product list"
         description="구매자와 판매자가 선택한 오픈 마켓"
       />
-      <div>본 내용</div>
+      <div>
+        <ImageSlide />
+      </div>
     </div>
   );
 };
