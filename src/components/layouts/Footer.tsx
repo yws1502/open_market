@@ -2,9 +2,8 @@ import styled from "styled-components";
 import Link from "next/link";
 import React from "react";
 
-interface FooterProps {}
 
-export const Footer: React.FC<FooterProps> = ({}) => {
+export const Footer = () => {
   return (
     <Container>
       <InnerContainer>

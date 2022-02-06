@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
-import { TitleLogo, SearchBar, LinkItem } from ".";
+import { TitleLogo, SearchBar, LinkItem } from "./Header";
+
 
 interface HeadersProps {
   h1Title: string;
