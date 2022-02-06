@@ -31,7 +31,7 @@ const Container = styled.section`
 const SlideControl = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: 500px;
   button {
     cursor: pointer;
     background-color: transparent;
