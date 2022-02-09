@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import React from "react";
+import { MEDIA } from "../../styles";
 
 interface ProductCardProps {
   imagePath: string;
@@ -53,6 +54,14 @@ const ProductCardStyle = styled.article`
     em {
       font-size: 1.4rem;
       font-weight: 300;
+    }
+  }
+  ${MEDIA.tablet} {
+    a em {
+      font-size: 1.4rem;
+    }
+    strong {
+      font-size: 1.6rem;
     }
   }
 `;

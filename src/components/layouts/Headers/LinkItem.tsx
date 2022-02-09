@@ -36,7 +36,6 @@ const LinkItemStyle = styled.div`
     img {
       display: block;
       width: 30px;
-      height: 30px;
       margin: 0 auto 8px;
     }
   }

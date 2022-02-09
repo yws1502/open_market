@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MEDIA } from "../styles";
 
 export const ImageSlide = () => {
   return (
@@ -36,6 +37,9 @@ const SlideControl = styled.div`
     cursor: pointer;
     background-color: transparent;
     border: none;
+  }
+  ${MEDIA.tablet} {
+    height: 400px;
   }
 `;
 

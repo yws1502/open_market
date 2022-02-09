@@ -15,9 +15,7 @@ export const Header: React.FC<HeaderProps> = ({ h1Title }) => {
           <TitleLogo imagePath="/assets/Logo-hodu.png" />
           <SearchBar />
         </div>
-        <nav>
-          <MenuTab />
-        </nav>
+        <MenuTab />
       </InnerContainer>
     </Container>
   );
@@ -29,7 +27,6 @@ const Container = styled.header`
 
 const InnerContainer = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: 0 auto;
@@ -38,9 +35,5 @@ const InnerContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 30px;
-  }
-  ul {
-    display: flex;
-    gap: 26px;
   }
 `;

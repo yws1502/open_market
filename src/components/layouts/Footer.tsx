@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 import React from "react";
-
+import { MEDIA } from "../../styles";
 
 export const Footer = () => {
   return (
@@ -107,6 +107,7 @@ const InnerContainer = styled.div`
   }
   nav ul {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     li a {
     }
@@ -125,6 +126,7 @@ const InnerContainer = styled.div`
     &::before {
       content: "";
       display: block;
+      font-weight: 400;
       background-color: ${({ theme }) => theme.color.gray};
       height: 1px;
       margin: 30px 0;
@@ -139,6 +141,12 @@ const InnerContainer = styled.div`
     right: 0;
     display: flex;
     gap: 19px;
+  }
+  ${MEDIA.tablet} {
+    font-size: 1rem;
+    & > ul {
+      display: none;
+    }
   }
 `;
 

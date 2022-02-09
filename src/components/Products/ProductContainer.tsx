@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import { ProductCard } from ".";
+import { MEDIA } from "../../styles";
 
 interface ProductContainerProps {}
 
@@ -37,8 +38,11 @@ export const ProductContainer: React.FC<ProductContainerProps> = ({}) => {
 
 const ProductContainerStyle = styled.section`
   display: grid;
-  grid-template-columns: repeat(3, 30%);
-  gap: 50px;
+  grid-gap: 50px;
   width: 80%;
+  grid-template-columns: repeat(3, 30%);
   margin: 80px auto 180px;
+  ${MEDIA.tablet} {
+    grid-template-columns: repeat(2, 50%);
+  }
 `;

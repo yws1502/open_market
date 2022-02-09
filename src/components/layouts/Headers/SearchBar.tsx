@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+import { MEDIA } from "../../../styles";
 
 interface SearchBarProps {}
 
@@ -34,18 +35,26 @@ export const SearchBarContainer = styled.fieldset`
     border: none;
     font-size: 1.6rem;
     padding: 13px 0 13px 22px;
-    width: 90%;
+    flex: 8;
     outline: none;
   }
   button {
+    flex: 1;
     background-color: transparent;
     border: none;
     background-image: url(/assets/icon-search.svg);
+    background-repeat: no-repeat;
     cursor: pointer;
     width: 28px;
     height: 28px;
     &:focus {
       outline-color: ${(props) => props.theme.color.base};
+    }
+  }
+  ${MEDIA.tablet} {
+    width: 300px;
+    input {
+      padding: 10px 0 10px 22px;
     }
   }
 `;
