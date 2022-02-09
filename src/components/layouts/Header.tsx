@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import { TitleLogo, SearchBar, LinkItem } from "./Headers";
+import { TitleLogo, SearchBar, MenuTab } from "./Headers";
 
 interface HeaderProps {
   h1Title: string;
@@ -12,26 +12,11 @@ export const Header: React.FC<HeaderProps> = ({ h1Title }) => {
       <h1 className="a11y-hidden">{h1Title}</h1>
       <InnerContainer>
         <div>
-          <TitleLogo
-            imagePath="/assets/Logo-hodu.png"
-            width="124"
-            height="38"
-          />
+          <TitleLogo imagePath="/assets/Logo-hodu.png" />
           <SearchBar />
         </div>
         <nav>
-          <ul>
-            <LinkItem
-              urlPath="/order/card"
-              name="장바구니"
-              imagePath="/assets/icon-shopping-cart.svg"
-            />
-            <LinkItem
-              urlPath="/login"
-              name="로그인"
-              imagePath="/assets/icon-user.svg"
-            />
-          </ul>
+          <MenuTab />
         </nav>
       </InnerContainer>
     </Container>
